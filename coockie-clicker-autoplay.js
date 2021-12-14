@@ -1,4 +1,4 @@
-// Auxiliar methods
+// Helper methods
 const convertValue = (value) => {
     let [number, valueName] = value.split(' ', 2)
     switch (valueName) {
@@ -74,7 +74,7 @@ const cookieButton = document.getElementById('bigCookie')
 const cookieButtonClick = () => cookieButton.click()
 const cookieButtonAutoClick = setInterval(cookieButtonClick, 1)
 
-// Create autobuy
+// Create autobuy (Need helpers methods)
 const productListElementArray = document.getElementById('products').children
 const productListArray = Array
     .from(productListElementArray)
